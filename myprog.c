@@ -64,23 +64,53 @@
 
 
 //Question 04
-#include <stdio.h>
+// #include <stdio.h>
 
-void swap(int *a, int *b) {
-    int temp = *a;
-    *a = *b;
-    *b = temp;
-}
+// void swap(int *a, int *b) {
+//     int temp = *a;
+//     *a = *b;
+//     *b = temp;
+// }
 
-int main() {
-    int a = 3;
-    int b = 4;
+// int main() {
+//     int a = 3;
+//     int b = 4;
 
-    printf("Before swapping: a is %d and b is %d\n", a, b);
+//     printf("Before swapping: a is %d and b is %d\n", a, b);
 
-    swap(&a, &b);
+//     swap(&a, &b);
 
-    printf("After swapping: a is %d and b is %d\n", a, b);
+//     printf("After swapping: a is %d and b is %d\n", a, b);
 
-    return 0;
-}
+//     return 0;
+// }
+
+
+//Question 05
+// #include <stdio.h>
+// #include <stdlib.h>
+// #include <time.h> 
+// int main() {
+//     int size;
+
+//     printf("Enter the size of the array (between 1 and 50): ");
+//     scanf("%d", &size);
+//     if (size < 1 || size > 50) {
+//         printf("Invalid size. Size must be between 1 and 50.\n");
+//         return 1; 
+//     }
+//     srand(time(NULL));
+//     int *numbers = (int *)malloc(size * sizeof(int));
+//     if (numbers == NULL) {
+//         printf("Memory allocation failed.\n");
+//         return 1; 
+//     }
+//     for (int i = 0; i < size; i++) {
+//         numbers[i] = rand();
+//         printf("%d is %d\n", i, numbers[i]);
+//     }
+
+//     free(numbers);
+
+//     return 0; 
+// }
